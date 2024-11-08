@@ -1,0 +1,702 @@
+[
+    {
+        "id_log": "LOG_0000",
+        "id_usuario": "USR_0000",
+        "acao": "login",
+        "timestamp": "2024-10-27 19:26:25",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o click_button"
+    },
+    {
+        "id_log": "LOG_0001",
+        "id_usuario": "USR_0003",
+        "acao": "click_button",
+        "timestamp": "2024-10-25 09:54:47",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o view_page"
+    },
+    {
+        "id_log": "LOG_0002",
+        "id_usuario": "USR_0007",
+        "acao": "login",
+        "timestamp": "2024-10-29 07:26:00",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o purchase"
+    },
+    {
+        "id_log": "LOG_0003",
+        "id_usuario": "USR_0004",
+        "acao": "logout",
+        "timestamp": "2024-10-25 16:23:20",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o purchase"
+    },
+    {
+        "id_log": "LOG_0004",
+        "id_usuario": "USR_0006",
+        "acao": "view_page",
+        "timestamp": "2024-10-29 03:58:44",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o logout"
+    },
+    {
+        "id_log": "LOG_0005",
+        "id_usuario": "USR_0003",
+        "acao": "logout",
+        "timestamp": "2024-10-29 23:59:58",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o view_page"
+    },
+    {
+        "id_log": "LOG_0006",
+        "id_usuario": "USR_0002",
+        "acao": "view_page",
+        "timestamp": "2024-10-30 12:57:45",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o purchase"
+    },
+    {
+        "id_log": "LOG_0007",
+        "id_usuario": "USR_0002",
+        "acao": "purchase",
+        "timestamp": "2024-10-30 08:13:43",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o click_button"
+    },
+    {
+        "id_log": "LOG_0008",
+        "id_usuario": "USR_0001",
+        "acao": "login",
+        "timestamp": "2024-10-26 18:41:29",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o login"
+    },
+    {
+        "id_log": "LOG_0009",
+        "id_usuario": "USR_0007",
+        "acao": "logout",
+        "timestamp": "2024-10-29 15:20:10",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o logout"
+    },
+    {
+        "id_log": "LOG_0010",
+        "id_usuario": "USR_0007",
+        "acao": "logout",
+        "timestamp": "2024-10-25 07:26:00",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o login"
+    },
+    {
+        "id_log": "LOG_0011",
+        "id_usuario": "USR_0009",
+        "acao": "purchase",
+        "timestamp": "2024-10-30 20:51:05",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o purchase"
+    },
+    {
+        "id_log": "LOG_0012",
+        "id_usuario": "USR_0006",
+        "acao": "purchase",
+        "timestamp": "2024-10-30 11:25:05",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o logout"
+    },
+    {
+        "id_log": "LOG_0013",
+        "id_usuario": "USR_0002",
+        "acao": "view_page",
+        "timestamp": "2024-10-28 00:48:27",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o purchase"
+    },
+    {
+        "id_log": "LOG_0014",
+        "id_usuario": "USR_0003",
+        "acao": "purchase",
+        "timestamp": "2024-10-26 13:53:18",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o click_button"
+    },
+    {
+        "id_log": "LOG_0015",
+        "id_usuario": "USR_0003",
+        "acao": "purchase",
+        "timestamp": "2024-10-29 23:19:58",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o click_button"
+    },
+    {
+        "id_log": "LOG_0016",
+        "id_usuario": "USR_0007",
+        "acao": "logout",
+        "timestamp": "2024-10-29 19:53:49",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o login"
+    },
+    {
+        "id_log": "LOG_0017",
+        "id_usuario": "USR_0002",
+        "acao": "login",
+        "timestamp": "2024-10-25 14:53:59",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o click_button"
+    },
+    {
+        "id_log": "LOG_0018",
+        "id_usuario": "USR_0004",
+        "acao": "purchase",
+        "timestamp": "2024-10-30 16:05:14",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o purchase"
+    },
+    {
+        "id_log": "LOG_0019",
+        "id_usuario": "USR_0008",
+        "acao": "view_page",
+        "timestamp": "2024-10-25 10:04:53",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o logout"
+    },
+    {
+        "id_log": "LOG_0020",
+        "id_usuario": "USR_0005",
+        "acao": "view_page",
+        "timestamp": "2024-10-26 07:38:52",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o login"
+    },
+    {
+        "id_log": "LOG_0021",
+        "id_usuario": "USR_0008",
+        "acao": "login",
+        "timestamp": "2024-10-29 07:53:51",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o purchase"
+    },
+    {
+        "id_log": "LOG_0022",
+        "id_usuario": "USR_0007",
+        "acao": "purchase",
+        "timestamp": "2024-10-27 07:47:10",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o purchase"
+    },
+    {
+        "id_log": "LOG_0023",
+        "id_usuario": "USR_0006",
+        "acao": "login",
+        "timestamp": "2024-10-27 08:04:25",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o view_page"
+    },
+    {
+        "id_log": "LOG_0024",
+        "id_usuario": "USR_0001",
+        "acao": "click_button",
+        "timestamp": "2024-10-26 07:54:24",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o click_button"
+    },
+    {
+        "id_log": "LOG_0025",
+        "id_usuario": "USR_0006",
+        "acao": "view_page",
+        "timestamp": "2024-10-26 21:46:59",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o click_button"
+    },
+    {
+        "id_log": "LOG_0026",
+        "id_usuario": "USR_0001",
+        "acao": "login",
+        "timestamp": "2024-10-30 17:07:29",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o logout"
+    },
+    {
+        "id_log": "LOG_0027",
+        "id_usuario": "USR_0000",
+        "acao": "logout",
+        "timestamp": "2024-10-29 18:14:31",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o purchase"
+    },
+    {
+        "id_log": "LOG_0028",
+        "id_usuario": "USR_0001",
+        "acao": "purchase",
+        "timestamp": "2024-10-26 07:40:19",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o purchase"
+    },
+    {
+        "id_log": "LOG_0029",
+        "id_usuario": "USR_0008",
+        "acao": "click_button",
+        "timestamp": "2024-10-29 07:11:14",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o logout"
+    },
+    {
+        "id_log": "LOG_0030",
+        "id_usuario": "USR_0005",
+        "acao": "login",
+        "timestamp": "2024-10-25 16:47:56",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o purchase"
+    },
+    {
+        "id_log": "LOG_0031",
+        "id_usuario": "USR_0009",
+        "acao": "purchase",
+        "timestamp": "2024-10-26 18:56:40",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o purchase"
+    },
+    {
+        "id_log": "LOG_0032",
+        "id_usuario": "USR_0000",
+        "acao": "logout",
+        "timestamp": "2024-10-30 00:52:00",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o view_page"
+    },
+    {
+        "id_log": "LOG_0033",
+        "id_usuario": "USR_0009",
+        "acao": "view_page",
+        "timestamp": "2024-10-30 00:13:26",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o logout"
+    },
+    {
+        "id_log": "LOG_0034",
+        "id_usuario": "USR_0004",
+        "acao": "purchase",
+        "timestamp": "2024-10-30 13:41:51",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o view_page"
+    },
+    {
+        "id_log": "LOG_0035",
+        "id_usuario": "USR_0008",
+        "acao": "login",
+        "timestamp": "2024-10-28 17:42:37",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o view_page"
+    },
+    {
+        "id_log": "LOG_0036",
+        "id_usuario": "USR_0002",
+        "acao": "purchase",
+        "timestamp": "2024-10-25 13:25:19",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o view_page"
+    },
+    {
+        "id_log": "LOG_0037",
+        "id_usuario": "USR_0008",
+        "acao": "purchase",
+        "timestamp": "2024-10-25 19:48:38",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o purchase"
+    },
+    {
+        "id_log": "LOG_0038",
+        "id_usuario": "USR_0002",
+        "acao": "logout",
+        "timestamp": "2024-10-30 13:54:35",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o logout"
+    },
+    {
+        "id_log": "LOG_0039",
+        "id_usuario": "USR_0001",
+        "acao": "login",
+        "timestamp": "2024-10-28 23:04:53",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o view_page"
+    },
+    {
+        "id_log": "LOG_0040",
+        "id_usuario": "USR_0003",
+        "acao": "view_page",
+        "timestamp": "2024-10-30 13:11:00",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o purchase"
+    },
+    {
+        "id_log": "LOG_0041",
+        "id_usuario": "USR_0001",
+        "acao": "click_button",
+        "timestamp": "2024-10-27 09:48:45",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o view_page"
+    },
+    {
+        "id_log": "LOG_0042",
+        "id_usuario": "USR_0003",
+        "acao": "purchase",
+        "timestamp": "2024-10-30 00:02:44",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o login"
+    },
+    {
+        "id_log": "LOG_0043",
+        "id_usuario": "USR_0008",
+        "acao": "purchase",
+        "timestamp": "2024-10-28 04:16:03",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o login"
+    },
+    {
+        "id_log": "LOG_0044",
+        "id_usuario": "USR_0000",
+        "acao": "purchase",
+        "timestamp": "2024-10-28 02:51:34",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o click_button"
+    },
+    {
+        "id_log": "LOG_0045",
+        "id_usuario": "USR_0000",
+        "acao": "view_page",
+        "timestamp": "2024-10-29 23:44:14",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o view_page"
+    },
+    {
+        "id_log": "LOG_0046",
+        "id_usuario": "USR_0006",
+        "acao": "login",
+        "timestamp": "2024-10-30 11:38:57",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o click_button"
+    },
+    {
+        "id_log": "LOG_0047",
+        "id_usuario": "USR_0006",
+        "acao": "purchase",
+        "timestamp": "2024-10-29 03:51:58",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o view_page"
+    },
+    {
+        "id_log": "LOG_0048",
+        "id_usuario": "USR_0004",
+        "acao": "login",
+        "timestamp": "2024-10-26 04:47:59",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o logout"
+    },
+    {
+        "id_log": "LOG_0049",
+        "id_usuario": "USR_0008",
+        "acao": "view_page",
+        "timestamp": "2024-10-29 02:02:20",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o login"
+    },
+    {
+        "id_log": "LOG_0050",
+        "id_usuario": "USR_0008",
+        "acao": "logout",
+        "timestamp": "2024-10-26 21:45:20",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o purchase"
+    },
+    {
+        "id_log": "LOG_0051",
+        "id_usuario": "USR_0008",
+        "acao": "login",
+        "timestamp": "2024-10-28 09:13:17",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o logout"
+    },
+    {
+        "id_log": "LOG_0052",
+        "id_usuario": "USR_0007",
+        "acao": "click_button",
+        "timestamp": "2024-10-28 11:13:13",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o logout"
+    },
+    {
+        "id_log": "LOG_0053",
+        "id_usuario": "USR_0007",
+        "acao": "logout",
+        "timestamp": "2024-10-29 04:53:56",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o login"
+    },
+    {
+        "id_log": "LOG_0054",
+        "id_usuario": "USR_0009",
+        "acao": "view_page",
+        "timestamp": "2024-10-29 04:35:25",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o login"
+    },
+    {
+        "id_log": "LOG_0055",
+        "id_usuario": "USR_0004",
+        "acao": "logout",
+        "timestamp": "2024-10-28 05:22:57",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o login"
+    },
+    {
+        "id_log": "LOG_0056",
+        "id_usuario": "USR_0005",
+        "acao": "logout",
+        "timestamp": "2024-10-27 20:27:56",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o logout"
+    },
+    {
+        "id_log": "LOG_0057",
+        "id_usuario": "USR_0009",
+        "acao": "login",
+        "timestamp": "2024-10-27 00:48:42",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o view_page"
+    },
+    {
+        "id_log": "LOG_0058",
+        "id_usuario": "USR_0009",
+        "acao": "click_button",
+        "timestamp": "2024-10-30 20:53:19",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o click_button"
+    },
+    {
+        "id_log": "LOG_0059",
+        "id_usuario": "USR_0006",
+        "acao": "logout",
+        "timestamp": "2024-10-28 19:52:33",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o purchase"
+    },
+    {
+        "id_log": "LOG_0060",
+        "id_usuario": "USR_0009",
+        "acao": "purchase",
+        "timestamp": "2024-10-25 23:05:51",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o logout"
+    },
+    {
+        "id_log": "LOG_0061",
+        "id_usuario": "USR_0004",
+        "acao": "login",
+        "timestamp": "2024-10-26 01:56:51",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o login"
+    },
+    {
+        "id_log": "LOG_0062",
+        "id_usuario": "USR_0007",
+        "acao": "view_page",
+        "timestamp": "2024-10-25 11:08:11",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o logout"
+    },
+    {
+        "id_log": "LOG_0063",
+        "id_usuario": "USR_0006",
+        "acao": "click_button",
+        "timestamp": "2024-10-30 08:55:11",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o purchase"
+    },
+    {
+        "id_log": "LOG_0064",
+        "id_usuario": "USR_0003",
+        "acao": "login",
+        "timestamp": "2024-10-27 07:23:17",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o logout"
+    },
+    {
+        "id_log": "LOG_0065",
+        "id_usuario": "USR_0000",
+        "acao": "purchase",
+        "timestamp": "2024-10-28 23:00:12",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o logout"
+    },
+    {
+        "id_log": "LOG_0066",
+        "id_usuario": "USR_0006",
+        "acao": "purchase",
+        "timestamp": "2024-10-28 20:20:49",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o click_button"
+    },
+    {
+        "id_log": "LOG_0067",
+        "id_usuario": "USR_0004",
+        "acao": "purchase",
+        "timestamp": "2024-10-28 23:59:36",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o click_button"
+    },
+    {
+        "id_log": "LOG_0068",
+        "id_usuario": "USR_0003",
+        "acao": "view_page",
+        "timestamp": "2024-10-26 20:56:06",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o view_page"
+    },
+    {
+        "id_log": "LOG_0069",
+        "id_usuario": "USR_0000",
+        "acao": "click_button",
+        "timestamp": "2024-10-28 15:51:55",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o click_button"
+    },
+    {
+        "id_log": "LOG_0070",
+        "id_usuario": "USR_0009",
+        "acao": "login",
+        "timestamp": "2024-10-26 23:54:53",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o view_page"
+    },
+    {
+        "id_log": "LOG_0071",
+        "id_usuario": "USR_0008",
+        "acao": "click_button",
+        "timestamp": "2024-10-29 18:43:15",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o view_page"
+    },
+    {
+        "id_log": "LOG_0072",
+        "id_usuario": "USR_0004",
+        "acao": "click_button",
+        "timestamp": "2024-10-25 10:37:04",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o login"
+    },
+    {
+        "id_log": "LOG_0073",
+        "id_usuario": "USR_0001",
+        "acao": "login",
+        "timestamp": "2024-10-27 23:23:08",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o purchase"
+    },
+    {
+        "id_log": "LOG_0074",
+        "id_usuario": "USR_0003",
+        "acao": "click_button",
+        "timestamp": "2024-10-27 19:08:59",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o purchase"
+    },
+    {
+        "id_log": "LOG_0075",
+        "id_usuario": "USR_0005",
+        "acao": "click_button",
+        "timestamp": "2024-10-27 21:55:08",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o view_page"
+    },
+    {
+        "id_log": "LOG_0076",
+        "id_usuario": "USR_0001",
+        "acao": "purchase",
+        "timestamp": "2024-10-25 18:57:11",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o logout"
+    },
+    {
+        "id_log": "LOG_0077",
+        "id_usuario": "USR_0008",
+        "acao": "logout",
+        "timestamp": "2024-10-30 09:26:46",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o logout"
+    },
+    {
+        "id_log": "LOG_0078",
+        "id_usuario": "USR_0007",
+        "acao": "logout",
+        "timestamp": "2024-10-26 07:05:22",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o purchase"
+    },
+    {
+        "id_log": "LOG_0079",
+        "id_usuario": "USR_0007",
+        "acao": "click_button",
+        "timestamp": "2024-10-28 11:07:12",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o click_button"
+    },
+    {
+        "id_log": "LOG_0080",
+        "id_usuario": "USR_0001",
+        "acao": "view_page",
+        "timestamp": "2024-10-25 06:30:37",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o click_button"
+    },
+    {
+        "id_log": "LOG_0081",
+        "id_usuario": "USR_0002",
+        "acao": "view_page",
+        "timestamp": "2024-10-29 06:10:58",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o logout"
+    },
+    {
+        "id_log": "LOG_0082",
+        "id_usuario": "USR_0002",
+        "acao": "click_button",
+        "timestamp": "2024-10-25 09:42:28",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o login"
+    },
+    {
+        "id_log": "LOG_0083",
+        "id_usuario": "USR_0003",
+        "acao": "logout",
+        "timestamp": "2024-10-28 18:09:22",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o view_page"
+    },
+    {
+        "id_log": "LOG_0084",
+        "id_usuario": "USR_0008",
+        "acao": "view_page",
+        "timestamp": "2024-10-27 03:26:26",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o purchase"
+    },
+    {
+        "id_log": "LOG_0085",
+        "id_usuario": "USR_0008",
+        "acao": "purchase",
+        "timestamp": "2024-10-30 16:39:50",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o logout"
+    },
+    {
+        "id_log": "LOG_0086",
+        "id_usuario": "USR_0008",
+        "acao": "logout",
+        "timestamp": "2024-10-30 04:22:42",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o logout"
+    },
+    {
+        "id_log": "LOG_0087",
+        "id_usuario": "USR_0008",
+        "acao": "purchase",
+        "timestamp": "2024-10-27 12:39:38",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o login"
+    },
+    {
+        "id_log": "LOG_0088",
+        "id_usuario": "USR_0008",
+        "acao": "view_page",
+        "timestamp": "2024-10-26 01:22:47",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o view_page"
+    },
+    {
+        "id_log": "LOG_0089",
+        "id_usuario": "USR_0008",
+        "acao": "view_page",
+        "timestamp": "2024-10-27 15:03:20",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o view_page"
+    },
+    {
+        "id_log": "LOG_0090",
+        "id_usuario": "USR_0003",
+        "acao": "login",
+        "timestamp": "2024-10-30 18:10:40",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o login"
+    },
+    {
+        "id_log": "LOG_0091",
+        "id_usuario": "USR_0002",
+        "acao": "logout",
+        "timestamp": "2024-10-27 08:41:51",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o view_page"
+    },
+    {
+        "id_log": "LOG_0092",
+        "id_usuario": "USR_0001",
+        "acao": "purchase",
+        "timestamp": "2024-10-25 15:20:37",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o logout"
+    },
+    {
+        "id_log": "LOG_0093",
+        "id_usuario": "USR_0007",
+        "acao": "view_page",
+        "timestamp": "2024-10-25 21:28:34",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o click_button"
+    },
+    {
+        "id_log": "LOG_0094",
+        "id_usuario": "USR_0005",
+        "acao": "click_button",
+        "timestamp": "2024-10-25 22:04:06",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o purchase"
+    },
+    {
+        "id_log": "LOG_0095",
+        "id_usuario": "USR_0006",
+        "acao": "view_page",
+        "timestamp": "2024-10-26 15:27:50",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o purchase"
+    },
+    {
+        "id_log": "LOG_0096",
+        "id_usuario": "USR_0004",
+        "acao": "login",
+        "timestamp": "2024-10-29 22:55:09",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o click_button"
+    },
+    {
+        "id_log": "LOG_0097",
+        "id_usuario": "USR_0003",
+        "acao": "click_button",
+        "timestamp": "2024-10-28 12:26:38",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o click_button"
+    },
+    {
+        "id_log": "LOG_0098",
+        "id_usuario": "USR_0000",
+        "acao": "purchase",
+        "timestamp": "2024-10-26 09:29:41",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o purchase"
+    },
+    {
+        "id_log": "LOG_0099",
+        "id_usuario": "USR_0008",
+        "acao": "view_page",
+        "timestamp": "2024-10-30 04:17:13",
+        "detalhes": "Detalhe sobre a a\u00e7\u00e3o click_button"
+    }
+]

@@ -1,43 +1,54 @@
 import { Injectable } from '@nestjs/common';
-import { Cron } from '@nestjs/schedule';
-import { groupLogsByUser, calculatePageTimes, identifyPeakUsageTimes } from './metrics.utils';
+import * as fs from 'fs/promises';
+import { PrismaService } from '../services/prisma.service';
+import { Log } from './@types/log';
+import {
+    calculatePageTimes,
+    groupLogsByUser,
+    identifyPeakUsageTimes,
+} from './metrics.utils';
 
 @Injectable()
 export class MetricsService {
-    private logs = [
-        { id_log: 'LOG_0000', id_usuario: 'USR_0000', acao: 'login', timestamp: '2024-10-27 19:26:25', detalhes: 'click_button' },
-        { id_log: 'LOG_0001', id_usuario: 'USR_0003', acao: 'click_button', timestamp: '2024-10-25 09:54:47', detalhes: 'view_page' },
-        { id_log: 'LOG_0002', id_usuario: 'USR_0007', acao: 'login', timestamp: '2024-10-29 07:26:00', detalhes: 'purchase' },
-        { id_log: 'LOG_0003', id_usuario: 'USR_0004', acao: 'logout', timestamp: '2024-10-25 16:23:20', detalhes: 'purchase' },
-        { id_log: 'LOG_0004', id_usuario: 'USR_0006', acao: 'view_page', timestamp: '2024-10-29 03:58:44', detalhes: 'logout' },
-    ];
+    constructor(private readonly prisma: PrismaService) {}
 
-    private metrics: any[] = [];
+    async getRawLogsFile() {
+        const fileContent = await fs.readFile(
+            '/home/marcelomaga/repositories/database-log/logs_uso.json',
+            'utf-8',
+        );
 
-    // @Cron('*/30 * * * * *')
-    async getRawLogs(): Promise<void> {
-        await this.processMetrics(this.logs);
+        const jsonData = JSON.parse(fileContent) as Log[];
+
+        await this.processMetrics(jsonData);
     }
 
-    async processMetrics(logs: any[]): Promise<void> {
+    async processMetrics(logs: Log[]): Promise<void> {
         const userActions = groupLogsByUser(logs);
         const pageTimes = calculatePageTimes(userActions);
         const peakUsageTimes = identifyPeakUsageTimes(logs);
 
-        this.saveMetrics(pageTimes, peakUsageTimes);
+        await this.saveMetrics(pageTimes, peakUsageTimes);
     }
 
-    private saveMetrics(pageTimes: any, peakUsageTimes: any): void {
-        const newMetrics = {
-            pageTimes,
-            peakUsageTimes,
-            createdAt: new Date(),
-        };
-        this.metrics.push(newMetrics);
-        console.log('Metrics saved in memory:', newMetrics);
+    private async saveMetrics(
+        pageTimes: any,
+        peakUsageTimes: any,
+    ): Promise<void> {
+        await this.prisma.metric.create({
+            data: {
+                pageTimes: pageTimes,
+                peakUsageTimes: peakUsageTimes,
+                createdAt: new Date(),
+            },
+        });
+        console.log('Metrics saved to MongoDB');
     }
 
+    // Retorna métricas tratadas
     async getMetrics() {
-        return this.metrics;
+        return await this.prisma.metric.findMany({
+            orderBy: { createdAt: 'desc' },
+        });
     }
 }

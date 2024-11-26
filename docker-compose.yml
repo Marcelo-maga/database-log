@@ -3,7 +3,7 @@ version: "3.8"
 services:
   couchdb:
     image: couchdb:latest
-    container_name: couchdb
+    container_name: couchdb-log
     environment:
       - COUCHDB_USER=admin
       - COUCHDB_PASSWORD=password
@@ -12,13 +12,31 @@ services:
     volumes:
       - couchdb_data:/opt/couchdb/data
 
-  mongodb:
-    image: mongo:latest
-    container_name: mongodb
+  mongo:
     ports:
-      - "27017:27017"
+      - 127.0.0.1:8232:27017
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=root
+    container_name: mongo1
     volumes:
-      - mongodb_data:/data/db
+      - ./mongodb.key:/keyfile
+      - ./mongo1_log:/bin/shell:z
+    networks:
+      - my-mongo-cluster
+    image: mongo:7
+    command: --replSet myReplicaSet --bind_ip_all --keyFile '/keyfile'
+    healthcheck:
+      test: [ "CMD-SHELL", "mongosh --username admin --password admin --authenticationDatabase admin --eval 'try { rs.status() } catch (err) { rs.initiate() }' || exit 1" ]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
+
+networks:
+  my-mongo-cluster:
+    external: true
+    name: my-mongo-cluster
 
 volumes:
   couchdb_data:

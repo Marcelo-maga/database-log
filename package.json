@@ -1,8 +1,20 @@
 {
-  "dependencies": {
-    "@faker-js/faker": "^9.2.0",
-    "body-parser": "^1.20.3",
-    "express": "^4.21.1",
-    "nano": "^10.1.4"
-  }
+  "name": "database-log",
+  "version": "1.0.0",
+  "description": "É necessário que sejam utilizadas as bases de dados CouchDB e MongoDB, portanto em cada\r tema onde aparece DB_X e DB_Y, substitua pelas bases escolhidas por cada time. OBS: Os 2\r times do grupo devem utilizar bases distintas, ou seja, se o time 1 escolheu MongoDB e time 2\r deve utilizar CouchDb e vice-versa;",
+  "main": "index.js",
+  "scripts": {
+    "start:api1": "cd team2/api && npm run dev",
+    "start:studio": "cd team2/api && npx prisma studio",
+    "start": "concurrently 'npm run start:api1' 'npm run start:studio' "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  },
+  "workspaces": [
+    "team2/api"
+  ]
 }

@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "dev": "node main.js"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^9.2.0",
+    "body-parser": "^1.20.3",
+    "express": "^4.21.1",
+    "nano": "^10.1.4"
+  }
+}

@@ -6,7 +6,7 @@ const { faker } = require("@faker-js/faker");
 const app = express();
 app.use(bodyParser.json());
 
-const couchDbUrl = "http://admin:admin@127.0.0.1:5984";
+const couchDbUrl = "http://admin:password@127.0.0.1:5984";
 const nano = Nano(couchDbUrl);
 const logsDbName = "logs";
 
@@ -123,7 +123,7 @@ app.get("/create/:qtd", async (req, res) => {
 (async () => {
   await initDb();
 
-  const PORT = 3000;
+  const PORT = 3001;
   app.listen(PORT, () => {
     console.log(`Servidor rodando em http://localhost:${PORT}`);
   });

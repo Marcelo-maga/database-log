@@ -14,8 +14,16 @@ datasource db {
 }
 
 model Metric {
-  id             String   @id @default(auto()) @map("_id") @db.ObjectId
-  pageTimes      Json
-  peakUsageTimes Json
-  createdAt      DateTime @default(now())
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  createdAt DateTime @default(now())
+  type      String?
+  details   Detail[] @relation("MetricDetails")
+}
+
+model Detail {
+  id       String @id @default(auto()) @map("_id") @db.ObjectId
+  key      String
+  value    String
+  metricId String @db.ObjectId
+  Metric   Metric @relation("MetricDetails", fields: [metricId], references: [id])
 }

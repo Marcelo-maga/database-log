@@ -2,9 +2,11 @@ import { Module } from '@nestjs/common';
 import { MetricsService } from './metrics.service';
 import { MetricsController } from './metrics.controller';
 import { PrismaService } from '../services/prisma.service';
+import { ScheduleModule } from '@nestjs/schedule';
 
 @Module({
-  controllers: [MetricsController],
-  providers: [MetricsService, PrismaService],
+    imports: [ScheduleModule.forRoot()],
+    controllers: [MetricsController],
+    providers: [MetricsService, PrismaService],
 })
-export class MetricsModule { }
+export class MetricsModule {}

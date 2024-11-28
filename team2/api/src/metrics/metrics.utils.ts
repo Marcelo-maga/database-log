@@ -1,69 +1,56 @@
 import { Log } from './@types/log';
-import { PageTime } from './@types/page-time';
 
-export function groupLogsByUser(logs: Log[]): Record<string, Log[]> {
-    const userActions: Record<string, Log[]> = {};
-    logs.forEach((log) => {
-        if (!userActions[log.id_usuario]) {
-            userActions[log.id_usuario] = [];
-        }
-        userActions[log.id_usuario].push(log);
-    });
-    return userActions;
+export function countActionsByUser(logs: Log[]): Record<string, number> {
+    return logs.reduce(
+        (counter, log) => {
+            counter[log.id_usuario] = (counter[log.id_usuario] || 0) + 1;
+            return counter;
+        },
+        {} as Record<string, number>,
+    );
 }
 
-export function calculateTimeDifference(
-    timestamp1: string,
-    timestamp2: string,
-): number {
-    const time1 = new Date(timestamp1);
-    const time2 = new Date(timestamp2);
-    return (time2.getTime() - time1.getTime()) / 1000;
+export function mostCommonAction(logs: Log[]): {
+    action: string;
+    count: number;
+} {
+    const actionCounts = logs.reduce(
+        (counter, log) => {
+            counter[log.acao] = (counter[log.acao] || 0) + 1;
+            return counter;
+        },
+        {} as Record<string, number>,
+    );
+
+    const [action, count] = Object.entries(actionCounts).reduce(
+        (mostCommon, current) =>
+            current[1] > mostCommon[1] ? current : mostCommon,
+    );
+
+    return { action, count };
 }
 
-export function calculatePageTimes(
-    userActions: Record<string, Log[]>,
-): Record<string, PageTime> {
-    const pageTimes: Record<string, PageTime> = {};
+export function mostActiveUser(logs: Log[]): {
+    userId: string;
+    count: number;
+} {
+    const userActionCounts = countActionsByUser(logs);
 
-    Object.keys(userActions).forEach((userId) => {
-        const actions = userActions[userId];
-        actions.forEach((action, index) => {
-            if (
-                action.acao === 'view_page' &&
-                actions[index + 1]?.acao === 'logout'
-            ) {
-                const timeSpent = calculateTimeDifference(
-                    action.timestamp,
-                    actions[index + 1].timestamp,
-                );
-                if (!pageTimes[action.detalhes]) {
-                    pageTimes[action.detalhes] = { total: 0, count: 0 };
-                }
-                pageTimes[action.detalhes].total += timeSpent;
-                pageTimes[action.detalhes].count += 1;
-            }
-        });
-    });
+    const [userId, count] = Object.entries(userActionCounts).reduce(
+        (mostActive, current) =>
+            current[1] > mostActive[1] ? current : mostActive,
+    );
 
-    Object.keys(pageTimes).forEach((page) => {
-        pageTimes[page].averageTime =
-            pageTimes[page].total / pageTimes[page].count;
-    });
-
-    return pageTimes;
+    return { userId, count };
 }
 
-export function identifyPeakUsageTimes(logs: Log[]): Record<number, number> {
-    const usageCounts: Record<number, number> = {};
-
-    logs.forEach((log) => {
-        const hour = new Date(log.timestamp).getHours();
-        if (!usageCounts[hour]) {
-            usageCounts[hour] = 0;
-        }
-        usageCounts[hour] += 1;
-    });
-
-    return usageCounts;
+export function countActionsByDay(logs: Log[]): Record<string, number> {
+    return logs.reduce(
+        (counter, log) => {
+            const day = log.timestamp.split(' ')[0];
+            counter[day] = (counter[day] || 0) + 1;
+            return counter;
+        },
+        {} as Record<string, number>,
+    );
 }

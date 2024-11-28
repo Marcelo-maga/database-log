@@ -7,7 +7,7 @@
     "start:api1": "cd team1/api && npm run dev",
     "start:api2": "cd team2/api && npm run dev",
     "start:studio": "cd team2/api && npx prisma studio",
-    "start": "concurrently 'npm run start:api1' 'npm run start:studio' "
+    "start": "concurrently 'npm run start:api1' 'npm run start:api2' 'npm run start:studio' "
   },
   "keywords": [],
   "author": "",
